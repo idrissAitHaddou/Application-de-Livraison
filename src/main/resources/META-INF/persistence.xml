@@ -4,6 +4,13 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="default">
-
+        <properties>
+            <property name='hibernate.connection.driver_class' value="org.postgresql.Driver" />
+            <property name='hibernate.connection.url' value="jdbc:postgresql://dockerDatabase:5434/livraison" />
+            <property name='hibernate.connection.username' value="postgres" />
+            <property name='hibernate.connection.password' value="admin" />
+            <property name="show_sql" value="false"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+        </properties>
     </persistence-unit>
 </persistence>

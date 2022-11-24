@@ -1,4 +1,4 @@
-package com.example.javadockerweb;
+package com.example.livraisonsmypack;
 
 import java.io.*;
 
@@ -15,20 +15,10 @@ public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
-        if(ConnectPostgresql.getConnection() == true) {
-            // Hello
-            PrintWriter out = response.getWriter();
-            out.println("<html><body>");
-            out.println("<h1>success</h1>");
-            out.println("</body></html>");
-        }else {
-            // Hello
-            PrintWriter out = response.getWriter();
-            out.println("<html><body>");
-            out.println("<h1>error</h1>");
-            out.println("</body></html>");
-        }
-
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<h1>" + message + "</h1>");
+        out.println("</body></html>");
     }
 
     public void destroy() {
