@@ -1,0 +1,31 @@
+package com.example.livraisonsmypack.category;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Categories {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @Column(name = "id")
+    @Basic
+    private Long id;
+    @Column(name = "name")
+    @Basic
+    private String name;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
