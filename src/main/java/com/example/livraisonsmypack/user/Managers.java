@@ -95,4 +95,6 @@ public class Managers {
     public void setAgencies(Agencies agencies) {
         this.agencies = agencies;
     }
+
+
 }
