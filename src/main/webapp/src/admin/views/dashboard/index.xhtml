@@ -9,6 +9,26 @@
     <title>dashboard</title>
 </h:head>
 <h:body>
-    <h:outputLabel id="output" value="is index dashboard"/>
+    <div class="w-full flex justify-between h-96">
+        <div class="w-8/12 flex justify-around bg-white rounded-lg h-52">
+           <div class="w-3/4 flex flex-col justify-center text-blue pl-4">
+               <h4 class="mb-2">Congratulations John! </h4>
+               <p class="mb-2">You have done 72% more sales today. Check</p>
+               <p class="mb-8">your new badge in your profile.</p>
+               <button class="w-36 text-xs px-2 py-1 rounded-lg text-blue-500 border border-blue-500">view all managers</button>
+           </div>
+           <h:graphicImage styleClass="w-64 h-48" value="./assets/images/delivery.png"></h:graphicImage>
+        </div>
+        <div class="w-40 flex flex-col justify-center item-center bg-white rounded-lg h-52">
+            <i class="pi pi-home text-center"></i>
+            <span class="mx-auto">230.00</span>
+            <span class="text-green-600 mx-auto">Drivers</span>
+        </div>
+        <div class="w-40 flex flex-col justify-center item-center bg-white rounded-lg h-52">
+            <i class="pi pi-home text-center"></i>
+            <span class="mx-auto">230.00</span>
+            <span class="text-green-600 mx-auto">Drivers</span>
+        </div>
+    </div>
 </h:body>
 </html>
