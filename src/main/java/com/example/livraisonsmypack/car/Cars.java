@@ -57,4 +57,12 @@ public class Cars {
     public void setNumber(String number) {
         this.number = number;
     }
+
+    public List<Drivers> getDrivers() {
+        return drivers;
+    }
+
+    public void setDrivers(List<Drivers> drivers) {
+        this.drivers = drivers;
+    }
 }

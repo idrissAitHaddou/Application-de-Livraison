@@ -64,6 +64,22 @@ public class Drivers {
         this.lastname = lastname;
     }
 
+    public Agencies getAgencies() {
+        return agencies;
+    }
+
+    public void setAgencies(Agencies agencies) {
+        this.agencies = agencies;
+    }
+
+    public Cars getCars() {
+        return cars;
+    }
+
+    public void setCars(Cars cars) {
+        this.cars = cars;
+    }
+
     public String getEmail() {
         return email;
     }

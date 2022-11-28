@@ -50,4 +50,20 @@ public class Products_command {
     public void setId_product(int id_product) {
         this.id_product = id_product;
     }
+
+    public List<Products> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Products> products) {
+        this.products = products;
+    }
+
+    public Commands getCommands() {
+        return commands;
+    }
+
+    public void setCommands(Commands commands) {
+        this.commands = commands;
+    }
 }
