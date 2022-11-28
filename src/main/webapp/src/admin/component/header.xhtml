@@ -7,8 +7,32 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
     <title>dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainTextActive: '#b66dff',
+                        mainBg : '#f2edf3',
+                        bgWhite : '#ffffff',
+                        mainText : "#9C9FA6"
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
 </h:head>
 <h:body>
-    <h:outputLabel id="output" value="is headre component"/>
+    <h:outputLabel styleClass="text-red-600" id="output" value="is headre component"/>
 </h:body>
 </html>
