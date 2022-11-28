@@ -28,7 +28,6 @@ public class Managers {
     @Column(name = "image")
     @Basic
     private String image;
-
     @OneToOne
     @JoinColumn(name = "id_agency", referencedColumnName = "id")
     private Agencies agencies;
@@ -87,5 +86,13 @@ public class Managers {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public Agencies getAgencies() {
+        return agencies;
+    }
+
+    public void setAgencies(Agencies agencies) {
+        this.agencies = agencies;
     }
 }

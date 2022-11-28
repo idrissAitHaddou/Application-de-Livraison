@@ -79,4 +79,12 @@ public class Commands {
     public void setCreated_at(String created_at) {
         this.created_at = created_at;
     }
+
+    public List<Products_command> getProductsCommands() {
+        return productsCommands;
+    }
+
+    public void setProductsCommands(List<Products_command> productsCommands) {
+        this.productsCommands = productsCommands;
+    }
 }

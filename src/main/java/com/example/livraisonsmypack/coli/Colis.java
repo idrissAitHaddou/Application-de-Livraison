@@ -101,4 +101,12 @@ public class Colis {
     public void setMax_date(String max_date) {
         this.max_date = max_date;
     }
+
+    public List<Products> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Products> products) {
+        this.products = products;
+    }
 }

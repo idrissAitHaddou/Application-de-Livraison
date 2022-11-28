@@ -35,4 +35,13 @@ public class Products_quantity {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public Products getProducts() {
+        return products;
+    }
+
+    public void setProducts(Products products) {
+        this.products = products;
+    }
+
 }

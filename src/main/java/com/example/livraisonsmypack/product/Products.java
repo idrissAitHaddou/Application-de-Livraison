@@ -35,7 +35,6 @@ public class Products {
     @Column(name = "image")
     @Basic
     private String image;
-
     @OneToOne
     @JoinColumn(name = "id_quantity", referencedColumnName = "id")
     private Products_quantity productsQuantity;
@@ -111,4 +110,28 @@ public class Products {
     public void setImage(String image) {
         this.image = image;
     }
+    public Products_quantity getProductsQuantity() {
+        return productsQuantity;
+    }
+
+    public void setProductsQuantity(Products_quantity productsQuantity) {
+        this.productsQuantity = productsQuantity;
+    }
+
+    public Colis getColis() {
+        return colis;
+    }
+
+    public void setColis(Colis colis) {
+        this.colis = colis;
+    }
+
+    public Products_command getProductsCommand() {
+        return productsCommand;
+    }
+
+    public void setProductsCommand(Products_command productsCommand) {
+        this.productsCommand = productsCommand;
+    }
+
 }

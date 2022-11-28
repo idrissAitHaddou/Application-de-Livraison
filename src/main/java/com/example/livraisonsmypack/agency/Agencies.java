@@ -63,4 +63,20 @@ public class Agencies {
     public void setAdress(String adress) {
         this.adress = adress;
     }
+
+    public List<Managers> getManagers() {
+        return managers;
+    }
+
+    public void setManagers(List<Managers> managers) {
+        this.managers = managers;
+    }
+
+    public List<Drivers> getDrivers() {
+        return drivers;
+    }
+
+    public void setDrivers(List<Drivers> drivers) {
+        this.drivers = drivers;
+    }
 }
