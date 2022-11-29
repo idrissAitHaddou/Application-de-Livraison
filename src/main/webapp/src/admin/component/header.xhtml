@@ -31,20 +31,22 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
 </h:head>
 <h:body>
-    <nav class="bg-white flex justify-between px-8">
+    <nav class="bg-white flex justify-between px-8 rounded-lg">
         <div class="w-2/3 bg-white">
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <i class="pi pi-search"></i>
                 </div>
-                <input type="search" id="default-search" class="focus:outline-none block w-full p-4 pl-10 text-sm text-gray-900 border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 " placeholder="Search...." />
+                <input type="search" id="default-search" class="shadow-none focus:ring-0 bg-none border-none block w-full p-4 pl-10 rounded-lg" placeholder="Search...." />
             </div>
         </div>
         <div>
-            <div class="flex items-center md:order-2">
+            <div class="flex items-center md:order-2 pt-2">
+                <span class="pr-4"><i class="pi pi-envelope" style="font-size: 20px"></i></span>
+                <span class="pr-4"><i class="pi pi-bell" style="font-size: 20px"></i></span>
                 <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-14 h-14 rounded-full" src="https://media.vanityfair.fr/photos/62d800c22604eb0f5b81e9a9/1:1/w_1365,h_1365,c_limit/ryan-gosling-the-gray-man.jpg" alt="user photo" />
+                    <img class="w-11 h-11 rounded-full" src="https://media.vanityfair.fr/photos/62d800c22604eb0f5b81e9a9/1:1/w_1365,h_1365,c_limit/ryan-gosling-the-gray-man.jpg" alt="user photo" />
                 </button>
                 <!-- Dropdown menu -->
                 <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
@@ -63,7 +65,7 @@
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-sky-700 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                         </li>
                     </ul>
                 </div>
