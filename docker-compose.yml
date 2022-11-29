@@ -2,9 +2,9 @@ services:
   wildfly:
       image: quay.io/wildfly/wildfly
       ports:
-        - "90:8080"
+        - "80:8080"
       volumes:
-        - "./target:/opt/jboss/wildfly/standalone/deployments/"
+        - "./target/livraisonsMyPack-1.0-SNAPSHOT.war:/opt/jboss/wildfly/standalone/deployments/ROOT.war"
   dockerDatabase:
     image: postgres
     environment:
