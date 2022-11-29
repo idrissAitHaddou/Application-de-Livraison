@@ -15,13 +15,17 @@
          </div>
         <div class="mt-8">
             <ul class="w-full flex flex-col justify-start pl-6">
-                <li class="text-[#697A8D] font-medium mb-4">
+                <li class="flex text-[#697A8D] font-medium mb-4">
                     <i class="pi pi-home mr-2"></i>
-                    <a href="#">Dashboard</a>
+                    <h:form>
+                        <h:commandLink action="home" value="Dashboard"></h:commandLink>
+                    </h:form>
                 </li>
-                <li class="text-[#697A8D] font-medium mb-4">
+                <li class="flex text-[#697A8D] font-medium mb-4">
                     <i class="pi pi-users mr-2"></i>
-                    <a href="#">Managers</a>
+                    <h:form>
+                            <h:commandLink action="managers" value="Manegers"></h:commandLink>
+                    </h:form>
                 </li>
                 <li class="text-[#697A8D] font-medium mb-4">
                     <i class="pi pi-user mr-2"></i>

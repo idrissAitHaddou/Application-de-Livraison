@@ -10,6 +10,6 @@
     <title>my pack</title>
 </h:head>
 <body>
-<ui:include src="./src/admin/index.xhtml" />
+    <ui:include src="#{AdminRouter.render(param['view'])}" />
 </body>
 </html>
