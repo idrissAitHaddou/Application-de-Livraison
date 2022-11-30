@@ -15,6 +15,8 @@ public class AdminRouter implements Serializable {
                 switch (view) {
                     case "home": return "./src/admin/index.xhtml";
                     case "managers": return "./src/admin/views/managers/index.xhtml";
+                    case "drivers": return "./src/admin/views/drivers/index.xhtml";
+                    case "cars": return "./src/admin/views/cars/index.xhtml";
                     default: return "./src/admin/index.xhtml";
                 }
             }else {
