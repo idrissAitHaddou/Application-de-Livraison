@@ -14,24 +14,32 @@
              <h:graphicImage width="100" height="80" value="/assets/images/logo.png"></h:graphicImage>
          </div>
         <div class="mt-8">
-                <ul class="w-full flex flex-col justify-start pl-6">
-                    <li class="text-[#697A8D] font-medium mb-4">
-                        <i class="pi pi-home mr-2"></i>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li class="text-[#697A8D] font-medium mb-4">
-                        <i class="pi pi-users mr-2"></i>
-                        <a href="#">Manager</a>
-                    </li>
-                    <li class="text-[#697A8D] font-medium mb-4">
-                        <i class="pi pi-user mr-2"></i>
-                        <a href="#">Drivers</a>
-                    </li>
-                    <li class="text-[#697A8D] font-medium mb-4">
-                        <i class="pi pi-car mr-2"></i>
-                        <a href="#">Cars</a>
-                    </li>
-                </ul>
+            <ul class="w-full flex flex-col justify-start pl-6">
+                <li class="flex text-[#697A8D] font-medium mb-4">
+                    <i class="pi pi-home mr-2"></i>
+                    <h:form>
+                        <h:commandLink action="home" value="Dashboard"></h:commandLink>
+                    </h:form>
+                </li>
+                <li class="flex text-[#697A8D] font-medium mb-4">
+                    <i class="pi pi-users mr-2"></i>
+                    <h:form>
+                            <h:commandLink action="managers" value="Manegers"></h:commandLink>
+                    </h:form>
+                </li>
+                <li class="flex text-[#697A8D] font-medium mb-4">
+                    <i class="pi pi-user mr-2"></i>
+                    <h:form>
+                        <h:commandLink action="drivers" value="Drivers"></h:commandLink>
+                    </h:form>
+                </li>
+                <li class="flex text-[#697A8D] font-medium mb-4">
+                    <i class="pi pi-car mr-2"></i>
+                    <h:form>
+                        <h:commandLink action="cars" value="Cars"></h:commandLink>
+                    </h:form>
+                </li>
+            </ul>
         </div>
     </div>
 </h:body>
